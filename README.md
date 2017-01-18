@@ -36,4 +36,4 @@ For å teste en enkelt oppgave kan du f.eks. kjøre:
 
     $ nosetests indexing.py:index1
 
-Husk at du også kan lese test koden i f.eks. *test_indexing.py* for å bedre forstå oppgaven. 
+Husk at du også kan lese test koden i f.eks. *test_indexing.py* for å bedre forstå oppgaven.
