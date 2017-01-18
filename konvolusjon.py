@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import time
 
 def main():
-  img = plt.imread('lena.png')#.astype(np.float)/255
+  img = plt.imread('lena.png')
   plt.imshow(img)
 
   start = time.time()
@@ -21,17 +21,7 @@ def convolution(image, kernel):
   """
   Write a general function to convolve an image with an arbitrary kernel.
   """
-  out = np.zeros(image.shape)
-  kernel = kernel[::-1, ::-1] #Flipping kernel to follow convention
-  N, M, C = image.shape
-  Nk, Mk = kernel.shape
-  nk_2 = Nk // 2
-  mk_2 = Mk // 2
-  for i in range(nk_2, N - nk_2):
-    for j in range(mk_2, M - mk_2):
-      for c in range(C):
-        out[i, j, c] = np.sum((image[i-nk_2:i+nk_2+1, j-nk_2:j+nk_2+1, c]*kernel))
-  return out
+  return image
 
 
 def blur_filter(img):
@@ -40,7 +30,7 @@ def blur_filter(img):
   with kernal size of 11.
   """
   k_size = 11
-  kernel = np.ones((k_size, k_size))/k_size**2
+  kernel = np.zeros((k_size, k_size))
   return convolution(img, kernel)
 
 
@@ -48,13 +38,8 @@ def sobel_filter(img):
   """
   Use your convolution function to filter your image with a sobel operator
   """
-  kernel = [[1, 2, 1],
-            [0, 0, 0],
-            [-1, -2, -1]]
-  kernel = np.array(kernel)
+  kernel = np.zeros((3, 3))
   return convolution(img, kernel)
-
-
 
 
 if __name__ == '__main__':
