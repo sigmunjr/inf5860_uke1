@@ -37,3 +37,7 @@ For å teste en enkelt oppgave kan du f.eks. kjøre:
     $ nosetests indexing.py:index1
 
 Husk at du også kan lese test koden i f.eks. *test_indexing.py* for å bedre forstå oppgaven.
+
+**Løsningene finner du ved**
+
+    $ git clone https://github.com/sigmunjr/inf5860_uke1_solutions.git
