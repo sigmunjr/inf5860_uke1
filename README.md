@@ -34,7 +34,7 @@ For å teste om du har løst oppgavene riktig kan du kjøre:
 Fra mappen inf5860_uke1. Da blir filene med test_ kjørt og man får et svar på hvor mange oppgaver som er gjort riktig.
 For å teste en enkelt oppgave kan du f.eks. kjøre:
 
-    $ nosetests indexing.py:index1
+    $ nosetests test_indexing.py:test_index1
 
 Husk at du også kan lese test koden i f.eks. *test_indexing.py* for å bedre forstå oppgaven.
 
