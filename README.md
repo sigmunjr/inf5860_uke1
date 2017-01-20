@@ -32,7 +32,7 @@ For å teste om du har løst oppgavene riktig kan du kjøre:
     $ nosetests
 
 Fra mappen inf5860_uke1. Da blir filene med test_ kjørt og man får et svar på hvor mange oppgaver som er gjort riktig.
-For å teste en enkelt oppgave kan du f.eks. kjøre:
+For å teste en enkelt oppgave kan du f.eks. kjøre (her testes funksjonen index1 i filen indexing.py):
 
     $ nosetests test_indexing.py:test_index1
 
