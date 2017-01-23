@@ -51,7 +51,7 @@ def math7(mat, v):
 
 def math8(mat, v):
   """
-  Element-wise multiply each column in mat with vector v
+  Element-wise add vecotr v to each column in mat
   """
   return mat
 
